@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
+  <defs>
+    <style>
+      .primary{fill:#1E3A8A}
+      .accent{fill:#059669}
+      .text{font-family:'Inter', Arial, sans-serif; font-weight:800}
+      .sub{font-weight:600}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1500" height="500" class="primary"/>
+  <text x="220" y="240" font-size="120" class="text" fill="#ffffff">AS Accounting</text>
+  <text x="220" y="300" font-size="36" class="text sub" fill="#ffffff">Modern Accounting • Abrantes • Contabilidade Moderna • Abrantes</text>
+  <rect x="220" y="330" width="380" height="8" class="accent"/>
+  <rect x="60" y="120" width="120" height="120" rx="20" fill="#ffffff"/>
+  <text x="80" y="210" font-size="88" class="text" fill="#1E3A8A">AS</text>
+</svg>
+
+

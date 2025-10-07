@@ -1,0 +1,14 @@
+{
+  "name": "as-accounting-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5"
+  }
+}
+
+

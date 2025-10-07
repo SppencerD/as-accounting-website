@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1062.99" height="614.17" viewBox="0 0 1062.99 614.17">
+  <defs>
+    <style>
+      .primary{fill:#1E3A8A}
+      .accent{fill:#F59E0B}
+      .text{font-family:'Inter', Arial, sans-serif; font-weight:700}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1062.99" height="614.17" class="primary"/>
+  <text x="531.49" y="318" text-anchor="middle" font-size="72" class="text" fill="#ffffff">AS Accounting</text>
+  <text x="531.49" y="378" text-anchor="middle" font-size="24" class="text" fill="#ffffff">Modern Accounting • Abrantes</text>
+  <rect x="381.49" y="420" width="300" height="6" class="accent"/>
+</svg>
+
+

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-label="AS Contabilidade lockup">
+  <defs>
+    <style>
+      .primary { fill: #1E3A8A; }
+      .accent { fill: #059669; }
+      .neutral { fill: #6B7280; }
+      .text { font-family: 'Inter', 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, 'Noto Sans'; font-weight: 700; letter-spacing: 0.2px; }
+      .sub { font-weight: 500; fill: #6B7280; letter-spacing: 0.5px; }
+    </style>
+  </defs>
+  <rect x="60" y="60" width="260" height="260" rx="52" class="primary"/>
+  <text x="118" y="234" font-size="160" class="text" fill="#FFFFFF">AS</text>
+  <rect x="360" y="80" width="8" height="220" class="accent"/>
+  <text x="400" y="190" font-size="110" class="text primary">AS Contabilidade</text>
+  <text x="400" y="250" font-size="42" class="text sub">Contabilidade Moderna • Abrantes</text>
+</svg>
+
+

@@ -1,0 +1,16 @@
+{
+  "name": "AS Accounting",
+  "short_name": "AS Accounting",
+  "description": "Modern Accounting • Abrantes — Contabilidade Moderna • Abrantes",
+  "lang": "pt-PT",
+  "dir": "ltr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1E3A8A",
+  "icons": [
+    { "src": "logo/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
+
+

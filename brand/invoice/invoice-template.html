@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Invoice • AS Accounting</title>
+    <link rel="stylesheet" href="../fonts.css" />
+    <link rel="stylesheet" href="../tokens.css" />
+    <style>
+      .invoice { max-width: 900px; margin: 40px auto; padding: 40px; background: #fff; border-radius: var(--as-radius-lg); box-shadow: var(--as-shadow-md); }
+      .row { display:flex; justify-content: space-between; gap:24px; }
+      .muted { color: var(--as-color-neutral); }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { padding: 12px; border-bottom: 1px solid #eee; text-align: left; }
+      th { background: #fafafa; font-weight: 600; }
+      .totals td { border: 0; }
+      .totals .label { text-align: right; }
+      .badge { display:inline-block; padding:4px 8px; border-radius:999px; background: color-mix(in oklab, var(--as-color-secondary), white 75%); color: var(--as-color-secondary); font-weight:600; }
+    </style>
+  </head>
+  <body>
+    <div class="invoice">
+      <div class="row" style="align-items:center; margin-bottom: 24px;">
+        <div class="row" style="gap:12px; align-items:center;">
+          <img src="../logo/favicon.svg" alt="AS" width="40" height="40" style="border-radius:10px;"/>
+          <div>
+            <div style="font-family: var(--as-font-secondary); font-weight:700; color: var(--as-color-primary); font-size: 22px;">AS Accounting</div>
+            <div class="muted" style="font-size: 12px;">António Santos II - Accounting & Services, Lda</div>
+          </div>
+        </div>
+        <div class="badge">Invoice / Fatura</div>
+      </div>
+
+      <div class="row" style="margin-bottom: 24px;">
+        <div>
+          <div style="font-weight:600;">Billed to / Faturado a</div>
+          <div id="clientName">Client Name</div>
+          <div class="muted" id="clientAddress">Address Line 1, City, Country</div>
+        </div>
+        <div>
+          <div><strong>No.</strong> <span id="invoiceNumber">2025-0001</span></div>
+          <div><strong>Date</strong> <span id="invoiceDate">2025-10-07</span></div>
+          <div><strong>Due</strong> <span id="invoiceDue">2025-10-21</span></div>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Description / Descrição</th>
+            <th>Qty</th>
+            <th>Unit</th>
+            <th>VAT / IVA</th>
+            <th style="text-align:right;">Line Total</th>
+          </tr>
+        </thead>
+        <tbody id="itemsBody">
+          <tr>
+            <td>Accounting Services - Monthly</td>
+            <td>1</td>
+            <td>€300.00</td>
+            <td>23%</td>
+            <td style="text-align:right;">€300.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="totals">
+            <td colspan="4" class="label">Subtotal</td>
+            <td style="text-align:right;" id="subtotal">€300.00</td>
+          </tr>
+          <tr class="totals">
+            <td colspan="4" class="label">VAT / IVA</td>
+            <td style="text-align:right;" id="vat">€69.00</td>
+          </tr>
+          <tr class="totals">
+            <td colspan="4" class="label"><strong>Total</strong></td>
+            <td style="text-align:right;" id="total"><strong>€369.00</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="muted" style="margin-top: 20px; font-size: 12px;">
+        Payments by bank transfer. / Pagamentos por transferência bancária. IBAN: PT50 0000 0000 0000 0000 0000 0.
+      </div>
+    </div>
+  </body>
+  </html>
+
+

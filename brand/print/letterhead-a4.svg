@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="3508" viewBox="0 0 2480 3508">
+  <!-- A4 at 300 DPI -->
+  <defs>
+    <style>
+      .primary{fill:#1E3A8A}
+      .secondary{fill:#059669}
+      .neutral{fill:#6B7280}
+      .text{font-family:'Inter', Arial, sans-serif}
+      .strong{font-weight:700}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="2480" height="3508" fill="#ffffff"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="2480" height="220" fill="#F7F8FA"/>
+  <rect x="160" y="60" width="160" height="160" rx="24" class="primary"/>
+  <text x="200" y="170" font-size="96" class="text strong" fill="#ffffff">AS</text>
+  <text x="360" y="120" font-size="64" class="text strong primary">AS Accounting • AS Contabilidade</text>
+  <text x="360" y="170" font-size="28" class="text neutral">Modern Accounting • Abrantes • Contabilidade Moderna • Abrantes</text>
+
+  <!-- Footer -->
+  <rect x="0" y="3308" width="2480" height="200" fill="#F7F8FA"/>
+  <rect x="160" y="3340" width="400" height="10" class="secondary"/>
+  <text x="160" y="3390" font-size="28" class="text">Av. Dr. Mário Soares, Lote 37B, 3º andar - Escritório 1, 2200-291 Abrantes, Portugal</text>
+  <text x="160" y="3430" font-size="28" class="text">M: +351 936 135 081 • T: +351 241 364 552 • antonio@as-accounting.pt • as-accounting.pt</text>
+</svg>
+
+

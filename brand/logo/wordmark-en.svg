@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="AS Accounting wordmark">
+  <defs>
+    <style>
+      .primary { fill: #1E3A8A; }
+      .secondary { fill: #059669; }
+      .neutral { fill: #6B7280; }
+      .text { font-family: 'Inter', 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, 'Noto Sans'; font-weight: 700; letter-spacing: 0.2px; }
+      .sub { font-weight: 500; fill: #6B7280; letter-spacing: 0.5px; }
+    </style>
+  </defs>
+  <!-- AS monogram tile (simple) -->
+  <rect x="40" y="40" width="220" height="220" rx="44" class="primary"/>
+  <text x="92" y="190" font-size="140" class="text" fill="#FFFFFF">AS</text>
+
+  <!-- Wordmark -->
+  <text x="300" y="150" font-size="92" class="text primary">AS Accounting</text>
+  <text x="300" y="210" font-size="36" class="text sub">Modern Accounting • Abrantes</text>
+</svg>
+
+

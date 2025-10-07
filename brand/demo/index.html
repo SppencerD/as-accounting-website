@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AS Accounting • Brand Demo</title>
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="icon" href="../logo/favicon.svg" />
+    <link rel="stylesheet" href="../fonts.css" />
+    <link rel="stylesheet" href="../tokens.css" />
+    <style>
+      .hero {
+        padding: var(--as-space-2xl) 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--as-space-xl);
+        align-items: center;
+      }
+      .row { display: grid; grid-template-columns: 1fr; gap: var(--as-space-lg); }
+      @media (min-width: 900px) {
+        .hero { grid-template-columns: 420px 1fr; }
+        .row { grid-template-columns: repeat(3, 1fr); }
+      }
+      .lang-switch { display: inline-flex; gap: 8px; background: #f7f7f8; padding: 6px; border-radius: 999px; }
+      .lang-switch button { background: transparent; border: 0; padding: 8px 14px; border-radius: 999px; font-family: var(--as-font-secondary); font-weight: 600; cursor: pointer; }
+      .lang-switch button.active { background: var(--as-color-primary); color: var(--as-color-primary-contrast); }
+      header { display: flex; justify-content: space-between; align-items: center; padding: var(--as-space-lg) 0; }
+      .logo { display: inline-flex; align-items: center; gap: 14px; text-decoration: none; }
+      .logo img { width: 44px; height: 44px; border-radius: 10px; }
+      .logo span { font-family: var(--as-font-secondary); font-weight: 700; color: var(--as-color-primary); }
+      .pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: color-mix(in oklab, var(--as-color-secondary), white 78%); color: var(--as-color-secondary); font-weight: 600; }
+      footer { margin-top: var(--as-space-2xl); padding: var(--as-space-xl) 0; color: var(--as-color-neutral); font-size: var(--as-font-size-sm); }
+      .sample-card h3 { margin: 0 0 6px; }
+      .grid-logos { display: grid; grid-template-columns: repeat(2, minmax(160px, 1fr)); gap: 20px; }
+      @media (min-width: 720px) { .grid-logos { grid-template-columns: repeat(4, minmax(160px, 1fr)); } }
+      .grid-logos img, .grid-logos object { width: 100%; height: auto; background: #fff; border-radius: 12px; box-shadow: var(--as-shadow-sm); }
+    </style>
+  </head>
+  <body>
+    <div class="as-container">
+      <header>
+        <a class="logo" href="#">
+          <img src="../logo/favicon.svg" alt="AS" />
+          <span id="brandName">AS Contabilidade</span>
+        </a>
+        <div class="lang-switch" role="tablist" aria-label="Language switch">
+          <button id="ptBtn" class="active" data-lang="pt" role="tab" aria-selected="true">PT</button>
+          <button id="enBtn" data-lang="en" role="tab" aria-selected="false">EN</button>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div>
+          <img src="../logo/lockup-pt.svg" alt="AS Contabilidade" style="width:100%; max-width:520px;" id="lockup" />
+        </div>
+        <div>
+          <h1 id="headline">Contabilidade Moderna • Abrantes</h1>
+          <p id="subcopy" style="color: var(--as-color-neutral); max-width:60ch;">
+            Serviços de contabilidade e consultoria para PMEs portuguesas e negócios internacionais em Portugal. Profissionalismo, proximidade e transformação digital.
+          </p>
+          <div style="display:flex; gap:12px; margin-top:16px;">
+            <a class="as-btn primary" id="ctaPrimary" href="tel:+351936135081">Ligar: +351 936 135 081</a>
+            <a class="as-btn secondary" id="ctaSecondary" href="mailto:antonio@as-accounting.pt">Email</a>
+          </div>
+          <div class="pill" style="margin-top:12px;">
+            <span>OCC</span>
+            <span id="occ">Contabilista Certificado</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="as-card sample-card">
+          <h3 id="card1Title">Serviços</h3>
+          <p id="card1Copy">Contabilidade, impostos, folhas de pagamento, constituição de empresas e consultoria.</p>
+        </div>
+        <div class="as-card sample-card">
+          <h3 id="card2Title">Tecnologia</h3>
+          <p id="card2Copy">Processos digitais com entrega segura de documentos e relatórios em tempo real.</p>
+        </div>
+        <div class="as-card sample-card">
+          <h3 id="card3Title">Atendimento</h3>
+          <p id="card3Copy">Atendimento em português e inglês. Focado em PMEs e investidores internacionais.</p>
+        </div>
+      </section>
+
+      <section style="margin-top: var(--as-space-2xl);">
+        <h2 id="assetsTitle">Logótipos e Wordmarks</h2>
+        <div class="grid-logos">
+          <object data="../logo/as-monogram.svg" type="image/svg+xml" aria-label="Monograma"></object>
+          <object id="wm1" data="../logo/wordmark-pt.svg" type="image/svg+xml" aria-label="Wordmark PT"></object>
+          <object id="wm2" data="../logo/lockup-pt.svg" type="image/svg+xml" aria-label="Lockup PT"></object>
+          <img src="../logo/favicon.svg" alt="Favicon" />
+        </div>
+      </section>
+
+      <footer>
+        <div id="footerLine">Av. Dr. Mário Soares, Lote 37B, 3º andar - Escritório 1, 2200-291 Abrantes • +351 241 364 552 • antonio@as-accounting.pt • as-accounting.pt</div>
+      </footer>
+    </div>
+
+    <script>
+      const dict = {
+        pt: {
+          brand: 'AS Contabilidade',
+          headline: 'Contabilidade Moderna • Abrantes',
+          subcopy: 'Serviços de contabilidade e consultoria para PMEs portuguesas e negócios internacionais em Portugal. Profissionalismo, proximidade e transformação digital.',
+          ctaPrimary: 'Ligar: +351 936 135 081',
+          ctaSecondary: 'Email',
+          occ: 'Contabilista Certificado',
+          card1Title: 'Serviços',
+          card1Copy: 'Contabilidade, impostos, folhas de pagamento, constituição de empresas e consultoria.',
+          card2Title: 'Tecnologia',
+          card2Copy: 'Processos digitais com entrega segura de documentos e relatórios em tempo real.',
+          card3Title: 'Atendimento',
+          card3Copy: 'Atendimento em português e inglês. Focado em PMEs e investidores internacionais.',
+          assetsTitle: 'Logótipos e Wordmarks',
+          footerLine: 'Av. Dr. Mário Soares, Lote 37B, 3º andar - Escritório 1, 2200-291 Abrantes • +351 241 364 552 • antonio@as-accounting.pt • as-accounting.pt',
+          lockup: '../logo/lockup-pt.svg',
+          wm1: '../logo/wordmark-pt.svg',
+          wm2: '../logo/lockup-pt.svg'
+        },
+        en: {
+          brand: 'AS Accounting',
+          headline: 'Modern Accounting • Abrantes',
+          subcopy: 'Accounting and advisory for Portuguese SMEs and international businesses in Portugal. Professional, approachable, and digitally modern.',
+          ctaPrimary: 'Call: +351 936 135 081',
+          ctaSecondary: 'Email',
+          occ: 'OCC Certified Accountant',
+          card1Title: 'Services',
+          card1Copy: 'Accounting, tax, payroll, company formation, and advisory.',
+          card2Title: 'Technology',
+          card2Copy: 'Digital workflows with secure document delivery and real-time reporting.',
+          card3Title: 'Client Care',
+          card3Copy: 'Service in Portuguese and English. Focus on SMEs and international investors.',
+          assetsTitle: 'Logos and Wordmarks',
+          footerLine: 'Av. Dr. Mário Soares, Lote 37B, 3º andar - Escritório 1, 2200-291 Abrantes • +351 241 364 552 • antonio@as-accounting.pt • as-accounting.pt',
+          lockup: '../logo/lockup-en.svg',
+          wm1: '../logo/wordmark-en.svg',
+          wm2: '../logo/lockup-en.svg'
+        }
+      };
+      function setLang(lang){
+        const t = dict[lang];
+        document.documentElement.lang = lang === 'pt' ? 'pt-PT' : 'en';
+        brandName.textContent = t.brand;
+        headline.textContent = t.headline;
+        subcopy.textContent = t.subcopy;
+        ctaPrimary.textContent = t.ctaPrimary;
+        ctaSecondary.textContent = t.ctaSecondary;
+        occ.textContent = t.occ;
+        card1Title.textContent = t.card1Title;
+        card1Copy.textContent = t.card1Copy;
+        card2Title.textContent = t.card2Title;
+        card2Copy.textContent = t.card2Copy;
+        card3Title.textContent = t.card3Title;
+        card3Copy.textContent = t.card3Copy;
+        assetsTitle.textContent = t.assetsTitle;
+        footerLine.textContent = t.footerLine;
+        lockup.src = t.lockup;
+        wm1.data = t.wm1;
+        wm2.data = t.wm2;
+        ptBtn.classList.toggle('active', lang==='pt');
+        enBtn.classList.toggle('active', lang==='en');
+      }
+      document.getElementById('ptBtn').addEventListener('click', ()=>setLang('pt'));
+      document.getElementById('enBtn').addEventListener('click', ()=>setLang('en'));
+    </script>
+  </body>
+  </html>
+
+

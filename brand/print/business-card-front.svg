@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1062.99" height="614.17" viewBox="0 0 1062.99 614.17">
+  <!-- 90x52 mm at 300 DPI (rounded): 1062.99 x 614.17 px, 3mm bleed not included -->
+  <defs>
+    <style>
+      .primary{fill:#1E3A8A}
+      .secondary{fill:#059669}
+      .neutral{fill:#6B7280}
+      .text{font-family:'Inter', Arial, sans-serif}
+      .strong{font-weight:700}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1062.99" height="614.17" fill="#ffffff"/>
+  <rect x="48" y="48" width="180" height="180" rx="28" class="primary"/>
+  <text x="78" y="168" font-size="98" class="text strong" fill="#ffffff">AS</text>
+
+  <text x="264" y="134" font-size="56" class="text strong primary">AS Contabilidade</text>
+  <text x="264" y="190" font-size="24" class="text neutral">Contabilidade Moderna • Abrantes</text>
+
+  <text x="48" y="270" font-size="32" class="text strong primary">António Santos</text>
+  <text x="48" y="310" font-size="18" class="text neutral">OCC Contabilista Certificado • OCC Certified Accountant</text>
+
+  <text x="48" y="360" font-size="18" class="text">Av. Dr. Mário Soares, Lote 37B, 3º andar - Escritório 1</text>
+  <text x="48" y="388" font-size="18" class="text">2200-291 Abrantes, Portugal</text>
+
+  <text x="48" y="430" font-size="18" class="text">M: +351 936 135 081   T: +351 241 364 552</text>
+  <text x="48" y="460" font-size="18" class="text secondary">antonio@as-accounting.pt   as-accounting.pt</text>
+
+  <rect x="48" y="500" width="240" height="6" class="secondary"/>
+</svg>
+
+
